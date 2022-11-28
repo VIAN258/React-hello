@@ -8,13 +8,16 @@ import Footer from "./footer.jsx";
 //import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
+let primario = "TEST1"
+let secundario = "A Warm Welcome!"
 const Home = () => {
 	return (
 	
 	<div className="container">
-		<Navbar />
-		<Jumbotron/>
+		<Navbar primario={primario} />
+		<Jumbotron secundario={secundario}/>
 		<Card/>
+		
 	</div>
 	
 	);
