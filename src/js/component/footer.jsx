@@ -2,11 +2,13 @@ import React from "react";
 
 const Footer = () => {
 	return (
-    <nav class="navbar sticky-bottom bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Sticky bottom</a>
-    </div>
-  </nav>
+    <nav className="navbar fixed-bottom bg-dark">
+      <div className="container text-center">
+          <div class="col text-light">
+          Copyright 2022
+          </div>
+      </div>
+    </nav>
 	);
 };
 

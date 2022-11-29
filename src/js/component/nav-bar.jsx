@@ -6,25 +6,26 @@ import React from "react";
 //create your first component
 const Navbar = (props) => {
 	return (
-   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark ">
-    <div class="container-fluid">
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-    </div>
+   
+  <nav className="navbar navbar-dark bg-dark">
+    <ul className="nav">
+      <li className="nav-item">
+        <a className="navbar-brand p-2" href="#">{props.primario}</a>
+      </li>
+    </ul>
+    <ul className="nav justify-content-end">
+      <li className="nav-item">
+        <a className="navbar-brand" href="#">Home</a>
+        <a className="navbar-brand" href="#">About</a>
+        <a className="navbar-brand" href="#">Services</a>
+        <a className="navbar-brand" href="#">Contact</a>
+      </li>
+    </ul>
   </nav>
+    
 	);
 };
 
 export default Navbar;
+
+
